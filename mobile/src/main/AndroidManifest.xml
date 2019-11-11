@@ -4,18 +4,45 @@
     package="com.synth3sisgame.synth3sisgame">
 
     <application
+        android:name=".utils.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        tools:replace="android:appComponentFactory">
-        <activity android:name=".SplashActivity">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".acitivities.AddChain"
+            android:theme="@style/NoTitleBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".acitivities.AddFolder"
+            android:theme="@style/NoTitleBarTheme"></activity>
+        <activity
+            android:name=".acitivities.AddBlock"
+            android:theme="@style/NoTitleBarTheme" />
+        <activity android:name=".acitivities.Dashboard">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".acitivities.SplashActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
