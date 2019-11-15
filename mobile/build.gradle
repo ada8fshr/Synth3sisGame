@@ -25,6 +25,14 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
     implementation 'com.google.code.gson:gson:2.8.2'                        // GSON
+    implementation 'com.github.jughoor:RecyclerTreeView:1.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'      // Custom Dialog
+    implementation 'gun0912.ted:tedpermission:2.2.0'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4'
+    implementation 'com.github.duanhong169:picker-view:1.0.1'
     wearApp project(':wear')
     implementation 'com.google.android.gms:play-services-wearable:+'
 }

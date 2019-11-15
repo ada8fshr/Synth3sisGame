@@ -31,6 +31,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
                     android:text="Siquantial"
+                    android:onClick="sequantialClicked"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_13sdp"/>
 
@@ -45,6 +46,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
                     android:text="Random"
+                    android:onClick="rendomClicked"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_13sdp"/>
 

@@ -46,21 +46,91 @@
 
             </RelativeLayout>
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_55sdp"
+                android:background="#F2F2F2"
+                android:gravity="top"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_2sdp"
+                android:id="@+id/commts"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:id="@+id/imgName"
+                android:onClick="addImageClicked"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/photo"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/round_dashboard"
+                android:text="Option 1"
+                android:onClick="option1Clicked"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_11sdp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/round_dashboard"
+                android:text="Option 1"
+                android:onClick="option1Clicked"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_11sdp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/round_dashboard"
+                android:text="Option 1"
+                android:onClick="option1Clicked"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_11sdp"/>
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/addnew"/>
+
         </LinearLayout>
 
         <RelativeLayout
             android:id="@+id/btmlay"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/downthin">
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/downthin"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Save"
                 android:textColor="@color/White"
                 android:textSize="@dimen/_20sdp" />
