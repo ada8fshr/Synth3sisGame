@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".acitivities.RandomPickerActivity">
+    tools:context=".acitivities.RandomLabelActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                     android:layout_centerInParent="true"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_20sdp"
-                    android:text="Random"/>
+                    android:text="Label Block"/>
 
                 <ImageView
                     android:layout_width="@dimen/_25sdp"
@@ -48,20 +48,52 @@
 
             </RelativeLayout>
 
-            <top.defaults.view.PickerView
-                android:id="@+id/pickerView"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:isCyclic="false"
-                android:background="#ffffff"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <top.defaults.view.PickerView
+                        android:id="@+id/pickerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isCyclic="false"
+                        android:background="#ffffff"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorAccent"
-                android:visibility="gone"
-                android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <top.defaults.view.PickerView
+                        android:id="@+id/pickerView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isCyclic="false"
+                        android:background="#ffffff"/>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
 
         </LinearLayout>
 

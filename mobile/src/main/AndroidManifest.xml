@@ -17,18 +17,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".acitivities.RandomLabelActivity"
+            android:theme="@style/NoTitleBarTheme"></activity>
+        <activity
+            android:name=".acitivities.FrequancyActivity"
+            android:theme="@style/NoTitleBarTheme" />
+        <activity
+            android:name=".acitivities.RandomAddFolderActivity"
+            android:theme="@style/NoTitleBarTheme" />
+        <activity
+            android:name=".acitivities.TimeNameOfChainActivity"
+            android:theme="@style/NoTitleBarTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".acitivities.SequantialPikerActivity"
+            android:theme="@style/NoTitleBarTheme">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name=".acitivities.RandomPickerActivity"
             android:theme="@style/NoTitleBarTheme">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".acitivities.Chains"></activity>
+        <activity android:name=".acitivities.Chains" />
         <activity
             android:name=".acitivities.AddChain"
-            android:theme="@style/NoTitleBarTheme"></activity>
+            android:theme="@style/NoTitleBarTheme" />
         <activity
             android:name=".acitivities.AddFolder"
             android:theme="@style/NoTitleBarTheme" />
@@ -44,28 +71,26 @@
         <activity
             android:name=".acitivities.RandomFolder"
             android:theme="@style/NoTitleBarTheme">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".GridItemActivity" />
         <activity android:name=".acitivities.Dashboard">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".acitivities.SplashActivity"
             android:theme="@style/NoTitleBarTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

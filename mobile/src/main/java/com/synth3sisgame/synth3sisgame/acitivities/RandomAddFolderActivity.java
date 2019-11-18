@@ -17,38 +17,37 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog;
 import com.synth3sisgame.synth3sisgame.R;
 import com.synth3sisgame.synth3sisgame.adopters.AdapterAddFolder;
+import com.synth3sisgame.synth3sisgame.adopters.RandomAddFolderAdopter;
 import com.synth3sisgame.synth3sisgame.models.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddFolder extends AppCompatActivity {
+public class RandomAddFolderActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<Item> myList;
-    AdapterAddFolder mAdapter;
-
+    RandomAddFolderAdopter mAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_folder);
-
+        setContentView(R.layout.activity_random_add_folder);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         myList = new ArrayList<>();
-        for(int i = 0; i < 2; i++){
+        for(int i = 0; i < 5; i++){
             Item item = new Item();
-            item.fullName = "Sample Name "+i;
+            item.fullName = "tariq "+i;
             myList.add(item);
         }
 
-        mAdapter = new AdapterAddFolder(AddFolder.this, myList, AddFolder.this);
+        mAdapter = new RandomAddFolderAdopter(RandomAddFolderActivity.this, myList, RandomAddFolderActivity.this);
         recyclerView.setAdapter(mAdapter);
     }
 
     public void addClicked(View view) {
-        View rootView = View.inflate(AddFolder.this, R.layout.custom_edittext_dialog, null);
-        new MaterialStyledDialog.Builder(AddFolder.this)
+        View rootView = View.inflate(RandomAddFolderActivity.this, R.layout.custom_edittext_dialog, null);
+        new MaterialStyledDialog.Builder(RandomAddFolderActivity.this)
                 .setTitle("Add folder name")
                 .setHeaderColor(R.color.colorAccent)
                 .setPositiveText("Ok")
@@ -66,10 +65,10 @@ public class AddFolder extends AppCompatActivity {
                             Item item = new Item();
                             item.fullName = editText.getText().toString();
                             myList.add(item);
-                            mAdapter = new AdapterAddFolder(AddFolder.this, myList, AddFolder.this);
+                            mAdapter = new RandomAddFolderAdopter(RandomAddFolderActivity.this, myList, RandomAddFolderActivity.this);
                             recyclerView.setAdapter(mAdapter);
                         }
-                        hideKeyboard(AddFolder.this, editText);
+                        hideKeyboard(RandomAddFolderActivity.this, editText);
                         dialog.dismiss();
                         Log.v("qwe", editText.getText().toString());
                     }

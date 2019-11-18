@@ -14,13 +14,11 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/randomCb"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/randomCb"
             android:text="Random"
-            android:textSize="@dimen/_12sdp"/>
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/loginTextColor"/>
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,11 +28,10 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/seqCb"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:checked="true"
             android:text="Sequantial"
-            android:textSize="@dimen/_12sdp"/>
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/loginTextColor"
+            android:id="@+id/seqCb"/>
     </LinearLayout>
 </LinearLayout>

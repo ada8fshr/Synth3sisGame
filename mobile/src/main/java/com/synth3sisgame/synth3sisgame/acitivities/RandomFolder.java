@@ -46,6 +46,18 @@ public class RandomFolder extends AppCompatActivity {
 
     }
 
+    public void freequanccyClicked(View view) {
+        startActivity(new Intent(this, FrequancyActivity.class));
+    }
+
+    public void labelBlockClicked(View view) {
+        startActivity(new Intent(this, RandomLabelActivity.class));
+    }
+
+    public void addNewRandomBlock(View view) {
+        startActivity(new Intent(this, AddBlock.class));
+    }
+
     private class CustomAdapter extends BaseAdapter {
         @Override
         public int getCount() {

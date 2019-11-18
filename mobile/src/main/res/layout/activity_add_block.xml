@@ -132,6 +132,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:text="Save"
+                android:onClick="saveClicked"
                 android:textColor="@color/White"
                 android:textSize="@dimen/_20sdp" />
         </RelativeLayout>

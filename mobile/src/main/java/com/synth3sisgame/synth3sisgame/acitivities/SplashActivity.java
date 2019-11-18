@@ -7,6 +7,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 import com.synth3sisgame.synth3sisgame.R;
+import com.synth3sisgame.synth3sisgame.utils.Prefs;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -18,6 +19,10 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Prefs.putString(this, Prefs.SEQUANTIAL_MIN, "");
+        Prefs.putString(this, Prefs.SEQUANTIAL_HOUR, "");
+        Prefs.putString(this, Prefs.RANDOM_TIME, "");
+
         th = new Thread(new Runnable() {
             @Override
             public void run() {

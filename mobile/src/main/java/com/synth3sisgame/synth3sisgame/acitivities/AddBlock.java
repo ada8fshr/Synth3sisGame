@@ -140,4 +140,7 @@ public class AddBlock extends AppCompatActivity {
                 .check();
     }
 
+    public void saveClicked(View view) {
+        finish();
+    }
 }

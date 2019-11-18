@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".acitivities.RandomFolder">
+    tools:context=".acitivities.RandomAddFolderActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                     android:layout_centerInParent="true"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_20sdp"
-                    android:text="Folder"/>
+                    android:text="Random Folder"/>
 
                 <ImageView
                     android:layout_width="@dimen/_25sdp"
@@ -50,8 +50,8 @@
                     android:layout_height="@dimen/_25sdp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
-                    android:onClick="addNewRandomBlock"
                     android:layout_marginRight="@dimen/_10sdp"
+                    android:onClick="addClicked"
                     android:src="@drawable/add"/>
 
             </RelativeLayout>
@@ -61,58 +61,12 @@
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true">
 
-                <GridView
-                    android:id="@+id/gridview"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#e5e5e5"
-                    android:horizontalSpacing="1dp"
-                    android:numColumns="2"
-                    android:verticalSpacing="1dp" />
-
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
             </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/downthin"
-            android:gravity="bottom">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:orientation="horizontal"
-                android:paddingLeft="@dimen/_10sdp"
-                android:paddingRight="@dimen/_10sdp">
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/round_dashboard"
-                    android:text="Label Block"
-                    android:onClick="labelBlockClicked"
-                    android:textColor="@color/White"
-                    android:textSize="@dimen/_11sdp"/>
-
-
-                <Space
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="wrap_content"/>
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_weight="1"
-                    android:background="@drawable/round_dashboard"
-                    android:text="Frequency"
-                    android:onClick="freequanccyClicked"
-                    android:textColor="@color/White"
-                    android:textSize="@dimen/_11sdp"/>
-
-            </LinearLayout>
 
         </LinearLayout>
 

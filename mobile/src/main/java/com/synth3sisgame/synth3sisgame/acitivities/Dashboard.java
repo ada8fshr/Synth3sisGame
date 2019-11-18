@@ -22,5 +22,6 @@ public class Dashboard extends AppCompatActivity {
     }
 
     public void rendomClicked(View view) {
+        startActivity(new Intent(this, RandomAddFolderActivity.class));
     }
 }
