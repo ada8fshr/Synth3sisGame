@@ -51,32 +51,38 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_80sdp"
                 android:layout_centerInParent="true">
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_view"
+                    android:id="@+id/rv"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbars="none" />
+                    android:layout_height="match_parent" />
             </RelativeLayout>
 
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_90sdp"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/downthin"
             android:gravity="bottom">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/downthin"
+                android:scaleType="centerCrop"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentBottom="true"
                 android:orientation="horizontal"
                 android:paddingLeft="@dimen/_10sdp"
                 android:paddingRight="@dimen/_10sdp">
                 <Button
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
                     android:text="Lable"
@@ -91,7 +97,7 @@
 
                 <Button
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_height="@dimen/_25sdp"
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
                     android:text="Add Chain"
@@ -101,7 +107,7 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
     </RelativeLayout>
