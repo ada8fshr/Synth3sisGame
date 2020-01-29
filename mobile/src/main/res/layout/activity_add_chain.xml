@@ -36,7 +36,7 @@
                     android:layout_centerInParent="true"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_20sdp"
-                    android:text="Add Chain"/>
+                    android:text="Folder Name"/>
 
                 <ImageView
                     android:layout_width="@dimen/_25sdp"
@@ -85,7 +85,8 @@
                     android:layout_height="@dimen/_25sdp"
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
-                    android:text="Lable"
+                    android:text="Add Chain"
+                    android:visibility="visible"
                     android:onClick="lableClicked"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_11sdp"/>
@@ -93,7 +94,8 @@
 
                 <Space
                     android:layout_width="@dimen/_10sdp"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
 
                 <Button
                     android:layout_width="0dp"
@@ -101,6 +103,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_dashboard"
                     android:text="Add Chain"
+                    android:visibility="gone"
                     android:onClick="addChainClicked"
                     android:textColor="@color/White"
                     android:textSize="@dimen/_11sdp"/>

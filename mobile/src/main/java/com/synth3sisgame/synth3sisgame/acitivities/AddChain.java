@@ -82,6 +82,7 @@ public class AddChain extends AppCompatActivity {
         rv.setAdapter(adapter);
     }
 
+
     public void lableClicked(View view) {
         View rootView = View.inflate(AddChain.this, R.layout.custom_dialog_seq_random, null);
         seqCb = rootView.findViewById(R.id.seqCb);

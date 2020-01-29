@@ -46,7 +46,7 @@ public class Item implements PickerView.PickerItem {
     public static List<Item> timing() {
         List<Item> items = new ArrayList<>();
         for (int i = 0; i < 12; i++) {
-            items.add(new Item(""+i, ""));
+            items.add(new Item(i+ " hours", ""));
         }
         return items;
     }
@@ -54,7 +54,7 @@ public class Item implements PickerView.PickerItem {
     public static List<Item> mins() {
         List<Item> items = new ArrayList<>();
         for (int i = 0; i < 60; i=i+5) {
-            items.add(new Item(""+i, ""));
+            items.add(new Item(i+ " mins", ""));
         }
         return items;
     }

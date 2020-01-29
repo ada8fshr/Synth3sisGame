@@ -10,7 +10,6 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.synth3sisgame.synth3sisgame.GridItemActivity;
 import com.synth3sisgame.synth3sisgame.R;
 
 import androidx.appcompat.app.AppCompatActivity;

@@ -62,7 +62,7 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:paddingRight="@dimen/_2sdp"
                     android:paddingLeft="@dimen/_2sdp"
-                    android:id="@+id/commts"
+                    android:id="@+id/titlechain"
                     android:hint="Title"
                     android:textSize="@dimen/_11sdp"
                     android:textColor="@color/black"/>
@@ -100,7 +100,7 @@
 <!--                <Button-->
 <!--                    android:layout_width="match_parent"-->
 <!--                    android:layout_height="@dimen/_30sdp"-->
-<!--                    android:background="@drawable/round_dashboard"-->
+<!--                    android:background="@drawable/round_for_text"-->
 <!--                    android:text="Not set"-->
 <!--                    android:id="@+id/sTime"-->
 <!--                    android:layout_marginLeft="@dimen/_10sdp"-->
@@ -128,8 +128,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="@dimen/_20sdp"
-                android:text="Save"
-                android:onClick="saveClicked"
+                android:text="Add Block"
+                android:onClick="addChainInLableClicked"
                 android:textColor="@color/White"
                 android:textSize="@dimen/_20sdp" />
         </RelativeLayout>

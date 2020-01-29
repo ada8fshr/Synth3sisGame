@@ -1,4 +1,4 @@
-package com.synth3sisgame.synth3sisgame;
+package com.synth3sisgame.synth3sisgame.acitivities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.synth3sisgame.synth3sisgame.R;
 
 public class GridItemActivity extends AppCompatActivity {
 

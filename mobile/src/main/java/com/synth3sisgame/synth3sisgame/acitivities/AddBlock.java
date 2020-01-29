@@ -7,6 +7,8 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 import android.Manifest;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,6 +22,7 @@ import android.widget.Toast;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 import com.synth3sisgame.synth3sisgame.R;
+import com.synth3sisgame.synth3sisgame.fragments.CenterBlock;
 import com.synth3sisgame.synth3sisgame.utils.FileUtil;
 
 import java.io.ByteArrayOutputStream;
@@ -36,7 +39,15 @@ public class AddBlock extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_block);
+        CenterBlock frag = new CenterBlock();
+        addFragment(frag);
 //        getSupportActionBar().hide();
+    }
+
+    public void addFragment(Fragment f) {
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.blocks, f);
+        fragmentTransaction.commit();
     }
 
     public void option1Clicked(View view) {
@@ -141,6 +152,7 @@ public class AddBlock extends AppCompatActivity {
     }
 
     public void saveClicked(View view) {
+        TimeNameOfChainActivity.timeNameOfChainActivity.finish();
         finish();
     }
 }

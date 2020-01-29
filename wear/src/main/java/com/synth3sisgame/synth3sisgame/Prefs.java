@@ -1,18 +1,15 @@
-package com.synth3sisgame.synth3sisgame.utils;
+package com.synth3sisgame.synth3sisgame;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 public class Prefs {
 
-    public static String SEQUANTIAL_HOUR = "SEQUANTIAL_HOUR";
-    public static String SEQUANTIAL_MIN = "SEQUANTIAL_MIN";
-    public static String DES_BTW_SCHEDULE_RANDOM = "DES_BTW_SCHEDULE_RANDOM";
-    public static String RANDOM_TIME = "RANDOM_TIME";
-
-    public static String CHAIN_TITLE = "CHAIN_TITLE";
+    public static String f1name = "f1name";
+    public static String f2name = "f2name";
+    public static String f1b = "f1b";
+    public static String f2b = "f2b";
 
     public static void putString(Context ctx, String key, String value) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(ctx);

@@ -31,28 +31,28 @@ public class SequantialPikerActivity extends AppCompatActivity {
         pickerView.setItems(Item.timing(), new PickerView.OnItemSelectedListener<Item>() {
             @Override
             public void onItemSelected(Item item) {
-                textView.setText(item.getText() + " hours");
+                textView.setText(item.getText());
                 timeOne = item.getText();
             }
         });
         pickerView.setSelectedItemPosition(4);
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
-        pickerView.setTypeface(typeface);
+//        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Caviar_Dreams_Bold.ttf");
+//        pickerView.setTypeface(typeface);
 
         pickerView1.setItems(Item.mins(), new PickerView.OnItemSelectedListener<Item>() {
             @Override
             public void onItemSelected(Item item) {
-                textView1.setText(item.getText() + " mins");
+                textView1.setText(item.getText());
                 timeTwo = item.getText();
             }
         });
         pickerView1.setSelectedItemPosition(4);
-        pickerView1.setTypeface(typeface);
+//        pickerView1.setTypeface(typeface);
     }
 
     public void saveClicked(View view) {
-//        Prefs.putString(this, Prefs.SEQUANTIAL_HOUR, timeOne);
-//        Prefs.putString(this, Prefs.SEQUANTIAL_MIN, timeTwo);
+        Prefs.putString(this, Prefs.SEQUANTIAL_HOUR, timeOne);
+        Prefs.putString(this, Prefs.SEQUANTIAL_MIN, timeTwo);
         finish();
     }
 }

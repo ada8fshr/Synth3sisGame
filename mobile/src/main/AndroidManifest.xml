@@ -17,8 +17,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".acitivities.RandomLabelActivity"
-            android:theme="@style/NoTitleBarTheme"></activity>
+
+        <activity
+            android:name=".acitivities.RandomLabelActivity"
+            android:theme="@style/NoTitleBarTheme" />
         <activity
             android:name=".acitivities.FrequancyActivity"
             android:theme="@style/NoTitleBarTheme" />
@@ -29,10 +31,10 @@
             android:name=".acitivities.TimeNameOfChainActivity"
             android:theme="@style/NoTitleBarTheme">
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity
             android:name=".acitivities.SequantialPikerActivity"
@@ -77,7 +79,7 @@
             <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
             <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".GridItemActivity" />
+        <activity android:name=".acitivities.GridItemActivity" />
         <activity android:name=".acitivities.Dashboard">
 
             <!-- <intent-filter> -->
@@ -88,10 +90,10 @@
         <activity
             android:name=".acitivities.SplashActivity"
             android:theme="@style/NoTitleBarTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

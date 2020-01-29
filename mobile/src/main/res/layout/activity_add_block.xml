@@ -46,71 +46,24 @@
 
             </RelativeLayout>
 
-            <EditText
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_55sdp"
-                android:background="#F2F2F2"
-                android:gravity="top"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:paddingRight="@dimen/_2sdp"
-                android:paddingLeft="@dimen/_2sdp"
-                android:id="@+id/commts"
-                android:textSize="@dimen/_11sdp"
-                android:textColor="@color/black"/>
+                android:layout_height="match_parent"
+                android:background="@color/White">
 
-            <ImageView
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_centerVertical="true"
-                android:id="@+id/imgName"
-                android:onClick="addImageClicked"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:src="@drawable/photo"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp"
-                android:background="@drawable/round_dashboard"
-                android:text="Option 1"
-                android:onClick="option1Clicked"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:textColor="@color/White"
-                android:textSize="@dimen/_11sdp"/>
+                    <fragment
+                        class = "com.synth3sisgame.synth3sisgame.fragments.CenterBlock"
+                        android:id="@+id/blocks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp"
-                android:background="@drawable/round_dashboard"
-                android:text="Option 1"
-                android:onClick="option1Clicked"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:textColor="@color/White"
-                android:textSize="@dimen/_11sdp"/>
+                </RelativeLayout>
+            </FrameLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_30sdp"
-                android:background="@drawable/round_dashboard"
-                android:text="Option 1"
-                android:onClick="option1Clicked"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:textColor="@color/White"
-                android:textSize="@dimen/_11sdp"/>
-
-            <ImageView
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_centerVertical="true"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:src="@drawable/addnew"/>
 
         </LinearLayout>
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "239041181033",
+    "firebase_url": "https://synth3sisgame.firebaseio.com",
+    "project_id": "synth3sisgame",
+    "storage_bucket": "synth3sisgame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239041181033:android:51fe5196fd20464902b9f8",
+        "android_client_info": {
+          "package_name": "com.synth3sisgame.synth3sisgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239041181033-9360604ht1hemcqq9k8ba4837n4n4rmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.synth3sisgame.synth3sisgame",
+            "certificate_hash": "c1aa16f7d5a676062cf9a9d3281209d524c2a253"
+          }
+        },
+        {
+          "client_id": "239041181033-ev0obb2820r0l4gmpoeedg3uds2ku55e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCumK1DsbNp5YA8AfPoKVlVn5kpKppWIUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239041181033-ev0obb2820r0l4gmpoeedg3uds2ku55e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
